@@ -1,0 +1,1 @@
+export const TeacherDashboard = () => <h1>Teacher Dashboard</h1>;

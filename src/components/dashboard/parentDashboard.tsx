@@ -1,0 +1,1 @@
+export const ParentDashboard = () => <h1>Parent Dashboard</h1>;

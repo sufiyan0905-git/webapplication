@@ -1,0 +1,1 @@
+export const StudentDashboard = () => <h1>Student Dashboard</h1>;
