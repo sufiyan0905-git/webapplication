@@ -1,6 +1,7 @@
 
 "use client";
 
+import { UserPlus } from "lucide-react";
 import DataTable from "@/components/common/table";
 import { dataTableFeatures } from "@/components/common/table";
 import { createColumnHelper } from "@tanstack/react-table";
@@ -74,11 +75,19 @@ const columns = columnHelper.columns([
 export default function UsersPage() {
     return (
         <div className="space-y-6">
-            <div>
-                <h1 className="text-2xl font-bold text-gray-900">Users</h1>
-                <p className="text-sm text-gray-500">
-                    Manage application users.
-                </p>
+            <div className="flex items-center justify-between gap-4">
+                <div>
+                    <h1 className="text-2xl font-bold text-gray-900">Users</h1>
+                    <p className="text-sm text-gray-500">
+                        Manage application users.
+                    </p>
+                </div>
+                <button
+                    type="button"
+                    className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700"
+                >
+                   Add User
+                </button>
             </div>
 
             <DataTable

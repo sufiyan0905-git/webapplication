@@ -2,10 +2,10 @@
 
 import { useAtomValue } from "jotai";
 import { authUserAtom } from "@/store/authAtoms";
-import { AdminDashboard } from "./adminDashboard";
 import { ParentDashboard } from "./parentDashboard";
-import { StudentDashboard } from "./studentDashboard";
 import { TeacherDashboard } from "./teacherDashboard";
+import StudentDashboard from "./studentDashboard";
+import AdminDashboard from "./adminDashboard";
 
 export const DashboardWrapper = () => {
   const user = useAtomValue(authUserAtom);
@@ -36,8 +36,7 @@ export const DashboardWrapper = () => {
     <>
       <div className="flex flex-1">
         <main className="min-w-0 flex-1 p-4">
-          <p>Signed in as {user.email}</p>
-          {dashboard}
+            {dashboard}
         </main>
       </div>
     </>
